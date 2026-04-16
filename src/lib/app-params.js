@@ -40,16 +40,16 @@ const getAppParams = () => {
 		storage.removeItem('token');
 	}
 	return {
-		appId: getAppParamValue("app_id", { defaultValue: import.meta.env.VITE_BASE44_APP_ID }),
+		// Had l-App ID houwa li khass bach t-hied l-error dial "null"
+		appId: getAppParamValue("app_id", { defaultValue: "69e0a9aa142ba698bfbf0177" }),
 		token: getAppParamValue("access_token", { removeFromUrl: true }),
 		fromUrl: getAppParamValue("from_url", { defaultValue: window.location.href }),
 		functionsVersion: getAppParamValue("functions_version", { defaultValue: import.meta.env.VITE_BASE44_FUNCTIONS_VERSION }),
 		appBaseUrl: getAppParamValue("app_base_url", { defaultValue: import.meta.env.VITE_BASE44_APP_BASE_URL }),
-		// Zid had s-stire bach t-khdem b l-API Key dyal TMDB
+		// Had s-stire darouri bach t-qra l-aflam mn TMDB
 		tmdbApiKey: import.meta.env.VITE_TMDB_API_KEY, 
 	}
 }
-
 
 export const appParams = {
 	...getAppParams()

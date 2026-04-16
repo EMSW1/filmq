@@ -1,0 +1,36 @@
+{
+  "name": "MovieComment",
+  "type": "object",
+  "properties": {
+    "tmdb_id": {
+      "type": "number",
+      "description": "TMDB movie ID"
+    },
+    "movie_title": {
+      "type": "string",
+      "description": "Movie title for display"
+    },
+    "text": {
+      "type": "string",
+      "description": "Comment text"
+    },
+    "is_spoiler": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether comment contains spoilers"
+    },
+    "likes": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of likes"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Display name of commenter"
+    }
+  },
+  "required": [
+    "tmdb_id",
+    "text"
+  ]
+}

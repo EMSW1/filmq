@@ -1,0 +1,34 @@
+{
+  "name": "WatchlistItem",
+  "type": "object",
+  "properties": {
+    "tmdb_id": {
+      "type": "number",
+      "description": "TMDB movie ID"
+    },
+    "title": {
+      "type": "string",
+      "description": "Movie title"
+    },
+    "poster_url": {
+      "type": "string",
+      "description": "Movie poster URL"
+    },
+    "rating": {
+      "type": "number",
+      "description": "TMDB rating"
+    },
+    "year": {
+      "type": "string",
+      "description": "Release year"
+    },
+    "genre": {
+      "type": "string",
+      "description": "Primary genre"
+    }
+  },
+  "required": [
+    "tmdb_id",
+    "title"
+  ]
+}

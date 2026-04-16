@@ -45,6 +45,8 @@ const getAppParams = () => {
 		fromUrl: getAppParamValue("from_url", { defaultValue: window.location.href }),
 		functionsVersion: getAppParamValue("functions_version", { defaultValue: import.meta.env.VITE_BASE44_FUNCTIONS_VERSION }),
 		appBaseUrl: getAppParamValue("app_base_url", { defaultValue: import.meta.env.VITE_BASE44_APP_BASE_URL }),
+		// Zid had s-stire bach t-khdem b l-API Key dyal TMDB
+		tmdbApiKey: import.meta.env.VITE_TMDB_API_KEY, 
 	}
 }
 
